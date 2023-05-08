@@ -5,6 +5,16 @@ import Locations.*;
 public class Myself implements Tourist {
     
     private int budget = 1000;
+    
+    public void visit() {
+        if (this.budget - 0 < 0) {
+            System.out.println("Not enough money to travel.");
+        } else {
+            System.out.println("Enjoying my stay.");
+            budget -= 0;
+        }
+        checkBudget();
+    }
 
     @Override
     public void visit(Boracay boracay) {
